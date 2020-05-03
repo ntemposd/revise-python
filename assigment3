@@ -1,0 +1,15 @@
+s = input('Insert a word: ')
+
+alist = list(s)
+blist = list(reversed(alist))
+
+if len(alist) == 1:
+ print("The word needs to include more than 1 characters")
+
+elif alist == blist :
+ adict = { s: len(alist) }
+ print(adict)
+ print(alist)
+
+else:
+ print('Your word is not palindrome')
